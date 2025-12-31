@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>时光记忆馆 | CJH专属博客</title>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="1style.css">
+</head>
+<body>
+  <!-- 顶部头部：保留你的所有自定义内容，头像固定 -->
+  <header class="blog-header" id="header">
+    <div class="header-bg">
+      <img src="https://s41.ax1x.com/2025/12/26/pZJ75ex.jpg" alt="科技风背景图" class="bg-img"> <!-- 换图直接换地址 -->
+      <div class="bg-gradient"></div>
+    </div>
+    <div class="header-center-wrap">
+      <div class="avatar-wrap">
+        <img src="https://s41.ax1x.com/2025/12/13/pZMsPij.jpg" alt="个人头像" class="user-avatar"> <!-- 你的固定头像 -->
+      </div>
+      <div class="user-info">
+        <h1 class="user-name">CJH博客主页</h1> <!-- 你的自定义名字 -->
+        <p class="user-desc">以下是一些我自己的过往回忆</p> <!-- 你的自定义描述 -->
+      </div>
+    </div>
+    <!-- 核心重构1：大屏横向导航（保留，不影响PC端体验） -->
+    <nav class="nav-menu" id="navMenu">
+      <div class="nav-container">
+        <a href="#home" class="nav-link active">回忆及初心</a>
+        <a href="#article" class="nav-link">博客内容</a>
+        <a href="#memory" class="nav-link">时光记忆馆</a>
+      </div>
+    </nav>
+    <!-- 核心重构2：左上角折叠菜单（修复失效+移至左上角，展开显示三大模块） -->
+    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+    <!-- 折叠菜单面板：专门放三大模块名称，点击锚点自动收菜单 -->
+    <div class="menu-panel" id="menuPanel">
+      <a href="#home" class="panel-link"><i class="fa-solid fa-house"></i> 回忆及初心</a>
+      <a href="#article" class="panel-link"><i class="fa-solid fa-book"></i> 博客内容</a>
+      <a href="#memory" class="panel-link"><i class="fa-solid fa-box-archive"></i> 时光记忆馆</a>
+    </div>
+  </header>
+
+  <!-- 首页：保留你的结构+文案 -->
+  <section class="hero-section" id="home">
+    <div class="section-inner">
+      <div class="section-title">回忆及初心</div>
+      <div class="hero-text">
+        <p>以代码为笔，以时光为卷，珍藏编程路上的每一段过往，记录<strong>初识代码的好奇</strong>、<strong>踩坑试错的执着</strong>与<strong>点滴成长的温暖</strong>。</p>
+        <p>这里没有耀眼的成果，只有纯粹的回忆碎片：第一次写代码的忐忑、攻克bug的欣喜、熬夜改效果的坚持，每一个瞬间，都是独属于我的编程时光印记。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 博客主题内容：保留你的自定义内容，修复标签完整 -->
+  <section class="article-section" id="article">
+    <div class="section-inner">
+      <div class="section-title">博客内容</div>
+      <div class="article-list">
+        <article class="article-card">
+          <div class="card-header">
+            <h3 class="card-title">博客主页首次创立</h3>
+            <span class="card-time">2025.12.16</span>
+          </div>
+          <div class="card-desc">
+            今天我创立了这个博客主题网页，将在以后去更新内容
+          </div>
+          <div class="card-tag"></div>
+        </article>
+        <div class="article-list">
+        <article class="article-card">
+          <div class="card-header">
+            <h3 class="card-title">元旦晚会</h3>
+            <span class="card-time">2025.12.30</span>
+          </div>
+          <div class="card-desc">
+            当时我们下午四点就放学了 开始布置教是啥的 晚上应该是六点多吧 我们开始举办了喊楼活动 搞完之后我们就回教室了 当时老热闹了，副校长还来我们班里了 班主任可是王主任是副校长一手提拔上来的 晚上九点就放了可惜没照片
+          </div>
+          <div class="card-tag"></div>
+        </article>
+        <div class="article-list">
+        <article class="article-card">
+          <div class="card-header">
+            <h3 class="card-title">跨年</h3>
+            <span class="card-time">2026.1.1</span>
+          </div>
+          <div class="card-desc">
+            今天也是来到了新的一年 2026年
+          </div>
+          <div class="card-tag"></div>
+        </article>
+        <!-- 👉 新增博客内容：复制上面article-card块粘贴即可 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 时光记忆馆：保留你的2022七年级初识HTML文案，结构不变 -->
+  <section class="memory-section" id="memory">
+    <div class="section-inner">
+      <div class="section-title">时光记忆馆</div>
+      <div class="memory-desc">
+        在2022年我首次接触HTML的相关代码编写，开启编程入门之路 <!-- 补充年份，更有纪念感 -->
+      </div>
+      <div class="memory-list">
+        <div class="memory-group">
+          <h3 class="memory-group-title">初识编程 · 初心起点</h3>
+          <div class="memory-item-wrap">
+            <div class="memory-item">
+              <i class="fa-solid fa-code memory-icon"></i>
+              <span class="memory-name">第一行代码</span>
+              <p class="memory-content">对着教程敲出第一行代码，浏览器渲染成功的瞬间，满心都是欢喜与好奇</p>
+            </div>
+            <div class="memory-item">
+              <i class="fa-solid fa-file-code memory-icon"></i>
+              <span class="memory-name">第一个简陋页面</span>
+              <p class="memory-content">用基础HTML/CSS做的第一个页面，排版粗糙，却是自己的第一个编程作品</p>
+            </div>
+            <div class="memory-item">
+              <i class="fa-solid fa-magnifying-glass memory-icon"></i>
+              <span class="memory-name">第一次查教程</span>
+              <p class="memory-content">遇到不懂的知识点，反复翻教程、查资料，慢慢解锁新认知的懵懂时光</p>
+            </div>
+          </div>
+        </div>
+        <div class="memory-group">
+          <h3 class="memory-group-title">进阶探索 · 成长时光</h3>
+          <div class="memory-item-wrap">
+            <div class="memory-item">
+              <i class="fa-solid fa-bug-slash memory-icon"></i>
+              <span class="memory-name">攻克首个bug</span>
+              <p class="memory-content">熬夜调试，终于解决第一个棘手bug，疲惫之余满是成就感与自豪感</p>
+            </div>
+            <div class="memory-item">
+              <i class="fa-solid fa-palette memory-icon"></i>
+              <span class="memory-name">第一次调渐变</span>
+              <p class="memory-content">为调出理想的科技风渐变，反复调整色值，耗时几小时也乐在其中</p>
+            </div>
+            <div class="memory-item">
+              <i class="fa-solid fa-gears memory-icon"></i>
+              <span class="memory-name">首个交互效果</span>
+              <p class="memory-content">用JS实现第一个点击交互，按钮触发效果的那一刻，解锁新技能的快乐</p>
+            </div>
+          </div>
+        </div>
+        <div class="memory-group">
+          <h3 class="memory-group-title">暖心相伴 · 温暖时光</h3>
+          <div class="memory-item-wrap">
+            <div class="memory-item">
+              <i class="fa-solid fa-users memory-icon"></i>
+              <span class="memory-name">第一次交流分享</span>
+              <p class="memory-content">和同好分享自己的代码，紧张又期待，收获满满的建议与鼓励</p>
+            </div>
+            <div class="memory-item">
+              <i class="fa-solid fa-comment-dots memory-icon"></i>
+              <span class="memory-name">心得互相交流</span>
+              <p class="memory-content">和小伙伴讨论问题、分享心得，解锁新思路，一路同行不孤单</p>
+            </div>
+            <div class="memory-item">
+              <i class="fa-solid fa-star memory-icon"></i>
+              <span class="memory-name">被认可的瞬间</span>
+              <p class="memory-content">自己的小作品被认可，一句夸奖，就能带来满满的动力，温暖又治愈</p>
+            </div>
+          </div>
+        </div>
+        <!-- 👉 新增回忆分组：复制上面memory-group块粘贴即可 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚：保留你的版权信息 -->
+  <footer class="blog-footer">
+    <div class="footer-inner">
+      <p>© 2025 CJH版权所有</p>
+    </div>
+  </footer>
+
+  <script src="1main.js"></script>
+</body>
+</html>
